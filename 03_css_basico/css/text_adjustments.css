@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(180, 193, 202);
+}
+
+h1, p {
+    color: white;
+    text-align: justify; /*Padrão left*/
+    text-transform: initial;
+    text-indent: 15px;
+    text-decoration: none;
+    letter-spacing: 1.2px; /*Padrão 0*/
+    line-height: 2; /*Altura da Linha. Um número sem unidade atua multiplicando pelo tamanho da fonte*/
+    word-spacing: 5px;
+    letter-spacing: 1;
+    text-shadow: 2px 2px 5px black; /*1-Deslocamento para a direita, 2-Deslocamento para baixo, 3-Raio de desfoque, 4- Cor*/
+}

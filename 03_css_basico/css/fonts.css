@@ -1,0 +1,7 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal; /**/
+    font-size: 15px;
+    font-weight: bold; /*Negrito, 100 é normal 700 é bold - Porém depende da familia de fontes*/
+    font-variant: small-caps; /*Deixa tudo em CAPSLOOK porem com as primeiras letras maiores*/
+}
