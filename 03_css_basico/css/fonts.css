@@ -1,7 +1,19 @@
+body {
+    font-family: 'Tourney','Indie Flower', cursive, arial;
+    font-size: 2em;
+    background-color: rgba(203, 222, 230, 0.774);
+    
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url(../font/Tourney-VariableFont_wdth\,wght.ttf);
+}
+
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
     font-style: normal; /**/
-    font-size: 15px;
+    font-size: 1em;
     font-weight: bold; /*Negrito, 100 é normal 700 é bold - Porém depende da familia de fontes*/
     font-variant: small-caps; /*Deixa tudo em CAPSLOOK porem com as primeiras letras maiores*/
 }

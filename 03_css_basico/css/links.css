@@ -1,0 +1,25 @@
+.links {
+    text-decoration: none;
+    color: white;
+    cursor: crosshair; 
+    background: red;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    border: 2px solid rgb(240, 114, 114);
+}
+
+.links:visited {
+    color: white;
+}
+
+.links:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.links:active {
+    background-color: rgb(87, 30, 30);
+    color: rgb(247, 242, 242);
+}
