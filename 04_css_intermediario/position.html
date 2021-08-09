@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/position.css">
     <title>CSS - Intermediário</title>
 </head>
+
 <body>
     <h1>Alinhamento</h1>
 
@@ -16,8 +18,36 @@
         <div class="square square-green"></div>
     </div>
 
-    <p>display: inline-block; Coloca os blocos na mesma linha</p>
-    <p>position: static; Este é o posicionamento padrão, deixa o block um em baixo do outro e o inline um do lado do outro (grudados)</p>
-    <p>osition: static; 3:59</p>
+    <h2>Display</h2>
+    <p>display: inline-block; Coloca os blocos na mesma linha (nestes casos podem surgir espaços originiarios da
+        organização do HTML (quando é dado ENTER para que cada elemento fique em uma linha por exemplo.))</p>
+    <h2>Position</h2>
+    <p>A propriedade position altera apenas a posição do elemento que a recebe, não alterando nenhum outro elemento no
+        processo (como ocorre se colocarmos margin, que acaba empurrando os outros elementos)
+        devido a isso, ela pode fazer o elemento ficar em cima de outros elementos.</p>
+    <h3>Static e Relative</h3>
+    <p>position: static; Este é o posicionamento padrão, deixa o block um em baixo do outro e o inline um do lado do
+        outro (grudados)</p>
+    <p>position: relative; Modifica a posição do elemento em relação a posição "statict" inicial. Porém se a janela
+        mudar de tamanho, a posição será mantida, ou seja: O elemento "filho" não acompanha o elemento "pai".</p>
+
+    <h3>Absolute</h3>
+    <p>position: absolute; A posição absoluta tira a interação entre o elemento e o restante da página, fazendo com que
+        os outros elementos possam estar por cima do elemento em absoluto</p>
+    <p>Este posicionamento não mantêm relação com sua posição inicial. Ele mantêm relação direta com o posicionamento do
+        elemento pai, desde de que este NÃO TENHA POSICIONAMENTO STATIC</p>
+    <P>Caso ele não encontre nenhum elemento acima do elemento pai com posicionamento diferente de static, ele vai se
+        posicionar em relação ao body.</P>
+
+    <h3>Fixed</h3>
+    <p>postion: fixed; A posição fixed torna o elemento fixo em referência a Window! (vai além do body)</p>
+
+    <h3>Sticky</h3>
+    <p>position: stiky; (grudento) Esta posição mantem também mantêm o elemento fixo porém ele interage com os outros
+        elementos enquanto eles estiverem visiveis na window (diferente do fixed que faz com que o elemento seja
+        ignorado). Caso os outros elementos sejam ocultos por conta do scroll o elemento sticky continuará visível
+        enquanto os outros saem da window (como se passasem por trás do elemento sticky).</p>
+
 </body>
+
 </html>

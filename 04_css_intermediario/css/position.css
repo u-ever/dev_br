@@ -1,6 +1,14 @@
 body {
+    margin: auto;
     background-color: gray;
     color: antiquewhite;
+    font-size: large;
+    text-align: justify;
+    width: 800px;
+}
+
+h3 {
+    text-decoration:underline
 }
 
 .square {
@@ -13,6 +21,9 @@ body {
 }
 
 .square-blue {
+    position: absolute;
+    right: 0px;
+    top: 0px;
     background-color: rgb(0, 102, 255);
     /*margin-left: 20px;
     margin-top: 20px;*/
@@ -23,6 +34,8 @@ body {
 }
 
 .frame {
+    margin: auto;
+    position: relative;
     width: 500px;
     height: 400px;
     border: 1px solid wheat;
