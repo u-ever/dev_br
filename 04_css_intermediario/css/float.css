@@ -1,0 +1,13 @@
+body {
+    margin: auto;
+    background-color: gray;
+    color: antiquewhite;
+    font-size: large;
+    text-align: justify;
+    width: 800px;
+}
+
+img {
+    width: 250px;
+    float: left;
+}

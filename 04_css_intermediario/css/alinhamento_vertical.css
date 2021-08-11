@@ -1,0 +1,27 @@
+body {
+    background-color: gray;
+    color: rgb(236, 206, 167);
+    font-size: large;
+    text-align: justify;
+}
+
+.card {
+    float: left;
+    width: 400px;
+    height: 200px;
+    border: 2px solid rgb(58, 170, 58);
+    text-align: center;
+    position: relative;
+}
+
+.c1 {
+    color: rgba(49, 39, 39, 0.616);
+    background-color: rgb(192, 233, 155);
+    line-height: 200px;
+}
+
+.c2 {
+    color: rgba(49, 39, 39, 0.616);
+    background-color: rgb(155, 208, 233);
+    position: absolute;
+}
