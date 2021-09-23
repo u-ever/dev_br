@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        window.onload = function () {
+            //primeira maneira de acessar
+            let d1 = document.getElementById("d1")
+            let h1 = d1.children[0] //pega o elemento 0 do array gerado da captura dos filhos do ID d1
+           console.log(h1)
+            let dd1 = h1.parentElement //pega o elemento pai do elemento salvo na variável
+            console.log(dd1)
+
+            //segunda maneira de acessar
+            console.log(document.body.children) //exibe todos os elementos dentro do body
+            console.log(document.body.children[0].children) //acessa o filho do item 0 exibido no array
+        }
+
+        window.onload = function () {
+            //Terceira maneira de acessar
+            let h1 = document.getElementsByTagName('h1') // captura os dois h1 no body
+            
+            for (let h of h1) { //exibe e adiciona um Listener aos dois elementos capturados acima 
+                console.log(h)
+                h.addEventListener("click", qop)
+            }
+
+            function qop(e) {
+
+                let t = e.target;
+                console.log(t.parentElement)
+            }
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="d1">
+        <h1>Titulo</h1>
+        <p>Qualquer Texto</p>
+    </div>
+
+    <div id="d2">
+        <h1>Titulo 2</h1>
+        <p>Qualquer Texto 2</p>
+    </div>
+</body>
+
+</html>

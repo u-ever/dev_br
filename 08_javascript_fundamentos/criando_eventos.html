@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+    </style>
+
+
+    <script>
+        //primeira forma
+        function f(e) { 
+            console.log('teste');
+            //console.log(this); //Desta forma o this é o window
+            console.log(e) //caso seja setado um elemento "f(elemento)" e ele não seja passado, teremos undefined passado. Necessário passar o this para que o elemento seja capturado.
+        }
+
+        //segunda forma 
+        function f1(e) { 
+            console.log('teste f1')
+            //console.log(this); // Desta forma o this passa a ser o elemento da variavel h1
+            console.log(e) //caso seja setado um elemento "f(elemento)" e ele não seja passado, teremos o evento "MouseEvent ou PointerEvent" por conta do AddEventListenner
+            console.log(e.target); //o target irá selecionar o elemento que foi clicado.
+        
+        }
+
+        window.onload= function(){
+            let h1 = document.getElementsByTagName("h1")[0];
+
+            h1.addEventListener("click", f1)
+        }
+
+    </script>
+</head>
+
+<body>
+    
+    <h1 onclick="f(this)">Titulo</h1>
+
+
+</body>
+
+</html>

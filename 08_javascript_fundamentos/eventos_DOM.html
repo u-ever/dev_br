@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            padding: 20px;
+            font-size: 2rem;
+            background-color: cornflowerblue;
+            color: aliceblue;
+            display: inline-block;
+        }
+    </style>
+    <script>
+//Funciona com o ONCLICK no elemento chamando a função
+//       function h1click() {
+//           console.log("Executando a função")
+//        }
+
+//Funciona com o ONCHANGE ou ONINPUT recebendo o THIS ou seja, o proprio elemento
+        function changeH1(i) {
+            let h1 = document.getElementsByTagName("h1")[0];
+            h1.innerText = i.value;
+        }
+//Funciona com o ONCLICK no elemento chamando a função neste caso
+        function hideh1() {
+            let h1 = document.getElementsByTagName("h1")[0];
+            h1.style.display = "none";
+        }
+    </script>
+
+</head>
+
+<body>
+    
+
+    <h1>Clique em mim</h1>
+    
+    <input type="text" onchange="changeH1(this)">
+
+    <div onclick="hideh1()">Clique</div>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Controler</title>
+
+
+    <style>
+
+    .container {
+        position: relative;
+        width: 640px;
+        height: 360px;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    .controle {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-align: center;
+    }
+
+    .btn {
+        position: relative;
+        top: 80%;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <video class="video" src="/assets/10seg.mp4">
+        
+        </video>
+
+        <div class="controle">
+            <span class="btn">&#8630</span>
+            <span class="btn">&#8631</span>
+            <span class="btn">&#9654</span>
+            <span class="btn">&#9724</span>
+            <span class="btn">&#10133</span>
+            <span class="btn">&#10134</span>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

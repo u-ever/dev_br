@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This</title>
+</head>
+<body>
+    
+    <h1>Título 0</h1>
+    <h2 id="t2">Título 1</h2>
+
+<script>
+
+    let t0 = document.getElementsByTagName("h1")[0];
+    let t1 = document.getElementById("t2");
+
+    t0.onclick = colocarEmMaiusculo;
+    t1.onclick = colocarEmMaiusculo;
+
+    function colocarEmMaiusculo() {
+
+        this.innerHTML = this.innerHTML.toUpperCase();
+        //caso o this seja trocado por uma das variáveis, a função não vai funcionar para as duas.
+    }
+
+</script>
+
+</body>
+</html>

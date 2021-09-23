@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+
+
+    <script>
+
+        //localStorage.setItem();
+        //salva um elemento na memória do navegador
+        //necessário passar dois argumentos: uma chave e uma string (valor armazenado)
+        //localStorage.setItem("nome", "Alana");
+
+
+        //localStorage.getItem();
+        //recupera um elemento na memória do navegador
+        //necessário atribuir a uma variável o nome da chave salva no LocalStorage
+        //localStorage.getItem();
+        //var n = localStorage.getItem("nome")
+        //console.log(n)
+
+
+        //localStorage.removeItem("nome");
+        //deleta um elemento da memória do navegador
+        //necessário passar o nome da chave do elemento a ser excluido        
+
+
+        //localStorage.clear();        
+        //deleta toda a memória do navegador      
+
+
+        //exemplo para string
+
+        onload = function() {
+
+            let nome = localStorage.getItem("nome");
+            let h1 = document.getElementById("nome");
+            h1.innerHTML = nome;
+
+        }
+
+        function atualizar(element) {
+
+            let valor = element.value;
+            console.log(valor)
+
+            let h1 = document.getElementById("nome");
+            h1.innerHTML = valor;
+
+            localStorage.setItem("nome", valor);
+        }
+
+
+        //para objetos e itens:
+
+        //let a = {nome: "Alana", n1: 7.5}
+        //localStorage.setItem("aluno", JSON.stringify(a))
+
+        let aluno = localStorage.getItem("aluno")
+        console.log(JSON.parse(aluno))
+
+
+    </script>
+</head>
+<body>
+
+    <h1 id="nome"></h1>
+    <input type="text" oninput="atualizar(this)">
+    
+</body>
+</html>
