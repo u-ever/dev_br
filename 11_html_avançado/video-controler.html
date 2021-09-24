@@ -35,26 +35,32 @@
         padding: 10px;
     }
 
+    
+
     </style>
 </head>
 <body>
     <div class="container">
 
-        <video class="video" src="/assets/10seg.mp4">
+        <video class="video" id="video1" src="assets/10seg.mp4"></video>
         
         </video>
 
         <div class="controle">
-            <span class="btn">&#8630</span>
-            <span class="btn">&#8631</span>
-            <span class="btn">&#9654</span>
-            <span class="btn">&#9724</span>
-            <span class="btn">&#10133</span>
-            <span class="btn">&#10134</span>
+            <span class="btn" onclick="vplay()">&#9654</span>
+            <span class="btn" onclick="vpause()"><strong>||</strong></span>
+            <span class="btn" onclick="vrecede()">&#8630</span>
+            <span class="btn" onclick="vadvance()">&#8631</span>
+            <span class="btn" onclick="vspeed_min()">&#10134</span>
+            <span class="btn" onclick="vspeed_plus()">&#10133</span>
+            <span class="btn" onclick="vstop()">&#9724</span>
         </div>
 
     </div>
 
+    <script src="video-controler.js">
+
+    </script>
     
 </body>
 </html>

@@ -1,6 +1,33 @@
+let video = document.getElementById("video1");
 
+function vplay(){
+    video.play();
+}
 
+function vpause(){
+    video.pause();
+}
 
+function vrecede(){
+    video.currentTime -= 2;
+}
+
+function vadvance(){
+    video.currentTime += 2;
+}
+
+function vspeed_min(){
+    video.playbackRate -= 0.1;
+}
+
+function vspeed_plus(){
+    video.playbackRate += 0.1;
+}
+
+function vstop(){
+    video.pause();
+    video.currentTime = 0;
+}
 
 
 
